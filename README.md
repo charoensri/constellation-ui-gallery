@@ -1,4 +1,4 @@
-# Constellation DX Components UI Gallery
+# Constellation DX Components UI Gallery - cloned from my https://github.com/charoensri/constellation-ui-gallery
 
 Constellation's flexible architecture empowers advanced users (professional front-end developers with ReactJS and web technology expertise) to extend the platform. You can achieve this by programmatically combining core Constellation presentational components and leveraging the Constellation DX API to build custom components, known as "Constellation DX components."
 
