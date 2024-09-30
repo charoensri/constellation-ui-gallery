@@ -53,7 +53,15 @@ export const PegaExtensionsChatGenAI = (props: ChatGenAIProps) => {
     const id = `A#${history.length}`;
     const item = {
       id,
-      value: <Message message={response} direction='in' senderType='agent' senderId={id} />
+      value: (
+        <Message
+          variant='other'
+          message={response}
+          direction='in'
+          senderType='agent'
+          senderId={id}
+        />
+      )
     };
     setHistory(prev => [...prev, item]);
   };
@@ -93,7 +101,15 @@ export const PegaExtensionsChatGenAI = (props: ChatGenAIProps) => {
       const id = `Q#${history.length}`;
       const item = {
         id,
-        value: <Message message={value} direction='out' senderType='customer' senderId={id} />
+        value: (
+          <Message
+            variant='other'
+            message={value}
+            direction='out'
+            senderType='customer'
+            senderId={id}
+          />
+        )
       };
       setHistory(prev => [...prev, item]);
       postQuestion(value);

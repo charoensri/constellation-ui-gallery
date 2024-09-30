@@ -13,6 +13,9 @@ const config: StorybookConfig = {
   },
   typescript: {
     check: true
+  },
+  features: {
+    storyStoreV7: true
   }
 };
 
